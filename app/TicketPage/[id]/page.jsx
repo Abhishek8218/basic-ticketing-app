@@ -1,4 +1,4 @@
-import EditTicketForm from "@/app/(components)/EditTicketForm";
+import EditTicketForm from "@/app/components/EditTicketForm";
 
 const getTicketById = async (id) => {
   try {

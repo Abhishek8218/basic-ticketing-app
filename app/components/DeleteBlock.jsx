@@ -10,7 +10,7 @@ const DeleteBlock = ({ id }) => {
   const deleteTicket = async () => {
    let text = " Are you Sure, You want to delete this ticket!!!!!"
     if(confirm(text) === true ){
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    const res = await fetch(`/api/Tickets/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
