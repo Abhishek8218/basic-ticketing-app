@@ -7,12 +7,12 @@ const Nav = () => {
     <nav className="flex flex-row justify-around bg-nav p-4">
       <div className="">
         <Link href="/">
-          <FontAwesomeIcon icon={faHome} className="icon" />
+          <FontAwesomeIcon icon={faHome} className="icon hover:text-red-400" />
         </Link>
         </div>
         <div>
         <Link href="/TicketPage/new">
-          <FontAwesomeIcon icon={faTicket} className="icon" />
+          <FontAwesomeIcon icon={faTicket} className="icon hover:text-red-400" />
         </Link>
         </div>
       

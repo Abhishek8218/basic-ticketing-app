@@ -77,7 +77,7 @@ const EditTicketForm = ({ ticket }) => {
       <form
         onSubmit={handleSubmit}
         method="post"
-        className="flex flex-col gap-3 w-1/2 border m-2 justify-center"
+        className="flex flex-col gap-3 w-5/6  border m-2 justify-center  md:w-1/2"
       >
         <h3>{EDITMODE ? "Update Your Ticket" : "Create New Ticket"}</h3>
         <label>Title</label>

@@ -57,7 +57,7 @@ const Dashboard = async () => {
   <div className="flex items-center content-center justify-center  h-screen">
     <Link href="/TicketPage/new">
       <div className="flex flex-row  gap-3 ">
-  <p className="text-3xl">Create Your Ticket</p>
+  <p className="text-3xl ">Create Your Ticket</p>
           <FontAwesomeIcon icon={faTicket} className="icon" size="2xl" />
           </div>
         </Link>
