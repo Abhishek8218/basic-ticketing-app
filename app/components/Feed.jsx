@@ -44,8 +44,11 @@ const Feed = ({ tickets }) => {
   );
 };
 
+export default Feed;
+
 export async function getServerSideProps(context) {
   try {
+    console.log("Fetching tickets...");
     const res = await fetch('https://service-ticketing-app.vercel.app/api/Tickets');
 
     if (!res.ok) {
@@ -53,6 +56,7 @@ export async function getServerSideProps(context) {
     }
 
     const data = await res.json();
+    console.log("Fetched tickets:", data);
     const tickets = data.tickets || [];
 
     return { props: { tickets } };
@@ -61,5 +65,3 @@ export async function getServerSideProps(context) {
     return { props: { tickets: [] } };
   }
 }
-
-export default Feed;
