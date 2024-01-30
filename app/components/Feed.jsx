@@ -8,7 +8,7 @@ import TicketCard from "./TicketCard";
 
 const getTickets = async () => {
   try {
-    const res = await fetch('service-ticketing-app.vercel.app/api/Tickets');
+    const res = await fetch('https://service-ticketing-app.vercel.app/api/Tickets');
 
     if (!res.ok) {
       throw new Error("Failed to fetch topics");
