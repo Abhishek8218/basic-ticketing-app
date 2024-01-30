@@ -4,11 +4,15 @@ import { faTicket } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TicketCard from "./TicketCard";
+import { GET } from "../api/Tickets/route";
 
 
 const getTickets = async () => {
   try {
-    const res = await fetch('https://service-ticketing-app.vercel.app/api/Tickets');
+    const res = await fetch('https://service-ticketing-app.vercel.app/api/Tickets', {
+      method: GET,
+    catche: "no-store"
+    });
 
     if (!res.ok) {
       throw new Error("Failed to fetch topics");
